@@ -1,4 +1,4 @@
-package com.whisky.wiki;
+package com.whisky.teoria01;
 
 import java.io.IOException;
 import java.util.Map;

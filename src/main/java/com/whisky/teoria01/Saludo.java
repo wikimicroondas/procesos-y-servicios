@@ -1,4 +1,4 @@
-package com.whisky.wiki;
+package com.whisky.teoria01;
 
 public class Saludo {
     static void main(String[] args) {

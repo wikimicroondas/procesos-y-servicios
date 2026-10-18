@@ -1,4 +1,4 @@
-package com.whisky.wiki;
+package com.whisky.teoria01;
 
 public class MostrarEntorno {
     public static void main(String[] args) {
