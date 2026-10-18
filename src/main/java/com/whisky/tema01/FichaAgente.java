@@ -58,11 +58,7 @@ public class FichaAgente {
 
     // con Optional<T> y ProcessHandle es mejor
     public static void printInstant() {
-        Instant instant = Instant.now();
-        DateTimeFormatter f = DateTimeFormatter.ofPattern("HH:mm:ss")
-                .withZone(ZoneId.systemDefault());
-        String uptime = f.format(instant);
-        System.out.printf("Fecha de inicio:\t\t%s\n", uptime);
+        System.out.printf("Fecha de inicio:\t\t\t%s\n", Instant.now().toString());
     }
 
     // SYSTEMD_EXEC_PID = PID
