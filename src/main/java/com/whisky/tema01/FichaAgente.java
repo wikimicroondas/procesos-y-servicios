@@ -41,8 +41,10 @@ public class FichaAgente {
         System.out.println("Usuario:\t\t\t\t" + user);
 
         // Instante de inicio
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS z")
+                .withZone(ZoneId.systemDefault());
         String start = processInfo.startInstant()
-                .map(Object::toString)
+                .map(formatter::format)
                 .orElse("No disponible");
         System.out.println("Instante de inicio:\t\t" + start);
 
@@ -58,7 +60,10 @@ public class FichaAgente {
 
     // con Optional<T> y ProcessHandle es mejor
     public static void printInstant() {
-        System.out.printf("Fecha de inicio:\t\t\t%s\n", Instant.now().toString());
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS z")
+                .withZone(ZoneId.systemDefault());
+        String start = formatter.format(Instant.now());
+        System.out.printf("Fecha de inicio:\t\t\t%s\n", start);
     }
 
     // SYSTEMD_EXEC_PID = PID
