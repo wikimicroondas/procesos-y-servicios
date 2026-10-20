@@ -3,11 +3,15 @@ package com.whisky.tema01;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class FichaAgente {
 
     void main(String[] args) {
         showProcessInfo(args);
+
+        // Scanner sc = new Scanner(System.in);
+        // int i = Integer.parseInt(sc.nextLine());
     }
 
     public static void showProcessInfo(String[] args) {
