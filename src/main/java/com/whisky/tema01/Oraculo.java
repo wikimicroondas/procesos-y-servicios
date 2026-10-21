@@ -24,8 +24,8 @@ public class Oraculo {
 
 
     public static void argsValidator(String[] args) {
-        if (args == null || args.length == 0) {
-            IO.println("Incorrect call.\n\n'java oraculo <name> <question>' was expected.");
+        if (args == null || args.length < 2) {
+            IO.println("Incorrect call.\n\n'java Oraculo <name> <question>' was expected.");
             System.exit(1);
         }
     }
