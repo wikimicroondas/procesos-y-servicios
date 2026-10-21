@@ -20,7 +20,7 @@ public class Padre {
 
             // Cambios  -- v
             Map<String, String> entorno = constructor.environment();
-            entorno.put("MODULO", "Programación de procesos y servicios");
+            entorno.put("MODULO", "Programación de servicios y procesos");
             entorno.put("CURSO", "DAM");
             entorno.remove("VARIABLE_NO_DESEADA");
 
